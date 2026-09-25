@@ -5,12 +5,12 @@
 class Multica < Formula
   desc "Compatibility formula for the renamed DevDocs CLI"
   homepage "https://github.com/devdocsorg/multica"
-  version "0.4.140"
+  version "0.4.141"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devdocsorg/multica/releases/download/v0.4.140/multica-cli-0.4.140-darwin-amd64.tar.gz"
-      sha256 "e8124d84b7443eb2bebc9871c234ef2e28a774fcc6cc7d0ba3b1cc24882687f5"
+      url "https://github.com/devdocsorg/multica/releases/download/v0.4.141/multica-cli-0.4.141-darwin-amd64.tar.gz"
+      sha256 "6d0f4e240ee8d4c650685965bf0068e7333b6ef4ece845b22605f69b132c4cba"
 
       define_method(:install) do
         bin.install "multica"
@@ -18,8 +18,8 @@ class Multica < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devdocsorg/multica/releases/download/v0.4.140/multica-cli-0.4.140-darwin-arm64.tar.gz"
-      sha256 "3a906313e75d97580d4aeae9629105ddeabe3a48e16770eadae597dfafbef9bc"
+      url "https://github.com/devdocsorg/multica/releases/download/v0.4.141/multica-cli-0.4.141-darwin-arm64.tar.gz"
+      sha256 "469d6d29c54b05d05bc1c1ff20ac9409bea08f7d8daa078a3ecb3ce91860368c"
 
       define_method(:install) do
         bin.install "multica"
@@ -30,16 +30,16 @@ class Multica < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devdocsorg/multica/releases/download/v0.4.140/multica-cli-0.4.140-linux-amd64.tar.gz"
-      sha256 "c1706f9bbc3f1cca8809898bf02364a53cc70bd1d4dcee4304a80983e9871a10"
+      url "https://github.com/devdocsorg/multica/releases/download/v0.4.141/multica-cli-0.4.141-linux-amd64.tar.gz"
+      sha256 "ca7d8a7abe094db48b462cc4a64ba11b552134d8839fea9834815c6118f87350"
       define_method(:install) do
         bin.install "multica"
         bin.install "devdocs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devdocsorg/multica/releases/download/v0.4.140/multica-cli-0.4.140-linux-arm64.tar.gz"
-      sha256 "78036e0eeb35fd2b2804911a027069b9f80056ff362a2e6f80e7ed74e61a1ddf"
+      url "https://github.com/devdocsorg/multica/releases/download/v0.4.141/multica-cli-0.4.141-linux-arm64.tar.gz"
+      sha256 "e96dbf1ded7b8887740a29b67b0ad43d2421684b90babf0c88891147a21b5faa"
       define_method(:install) do
         bin.install "multica"
         bin.install "devdocs"
