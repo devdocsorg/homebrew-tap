@@ -5,20 +5,20 @@
 class Devdocs < Formula
   desc "DevDocs CLI — local agent runtime and management tool for the DevDocs platform"
   homepage "https://github.com/devdocsorg/multica"
-  version "0.4.201"
+  version "0.4.203"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devdocsorg/multica/releases/download/v0.4.201/devdocs-cli-0.4.201-darwin-amd64.tar.gz"
-      sha256 "ac86515d20fd446037aee22ce3d6830860155da96acb8836822a3b566031889f"
+      url "https://github.com/devdocsorg/multica/releases/download/v0.4.203/devdocs-cli-0.4.203-darwin-amd64.tar.gz"
+      sha256 "fa9fed1730af17d1fccdbc30e3731c8250afe8a7fbc237078bfef3946973d2c3"
 
       define_method(:install) do
         bin.install "devdocs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devdocsorg/multica/releases/download/v0.4.201/devdocs-cli-0.4.201-darwin-arm64.tar.gz"
-      sha256 "82d5fae0c1997249c533435f9f12ee3d1077fbf74f1d41cea7b854dbc5b33bcc"
+      url "https://github.com/devdocsorg/multica/releases/download/v0.4.203/devdocs-cli-0.4.203-darwin-arm64.tar.gz"
+      sha256 "732687856ba35d32c6e31225864b3400fb9a3916e4fad3c3133914e72a6c92dc"
 
       define_method(:install) do
         bin.install "devdocs"
@@ -28,15 +28,15 @@ class Devdocs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devdocsorg/multica/releases/download/v0.4.201/devdocs-cli-0.4.201-linux-amd64.tar.gz"
-      sha256 "715f96fe97a9ea4ca6b20a15184d520ff5f42e353f2d787380bf2aad25d31767"
+      url "https://github.com/devdocsorg/multica/releases/download/v0.4.203/devdocs-cli-0.4.203-linux-amd64.tar.gz"
+      sha256 "22670a6a38887313094196d6f682eff47e4d4d049607a85d96f704aa21da3cea"
       define_method(:install) do
         bin.install "devdocs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devdocsorg/multica/releases/download/v0.4.201/devdocs-cli-0.4.201-linux-arm64.tar.gz"
-      sha256 "31a58d2e646e1d9f80473336433e2c372ef2be150100ac939ff3a56d23a7a405"
+      url "https://github.com/devdocsorg/multica/releases/download/v0.4.203/devdocs-cli-0.4.203-linux-arm64.tar.gz"
+      sha256 "35e83a66d6fee1a1ec9be7fc703f7bae0d27fc4339321ace3604dcfdab8282ff"
       define_method(:install) do
         bin.install "devdocs"
       end
