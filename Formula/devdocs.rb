@@ -5,20 +5,20 @@
 class Devdocs < Formula
   desc "DevDocs CLI — local agent runtime and management tool for the DevDocs platform"
   homepage "https://devdocs.ai"
-  version "0.4.219-node24-verify-2"
+  version "0.4.279"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devdocsorg/multica/releases/download/v0.4.219-node24-verify-2/devdocs-cli-0.4.219-node24-verify-2-darwin-amd64.tar.gz"
-      sha256 "e805d1843436f0b75c90776cc85a5c39a532859ae444387968578a9fc2cf294b"
+      url "https://github.com/devdocsorg/multica/releases/download/v0.4.279/devdocs-cli-0.4.279-darwin-amd64.tar.gz"
+      sha256 "b8bdf4c0a0751aaa791b3a5991035619ba44af61e602c991c18eaee4e83016d5"
 
       define_method(:install) do
         bin.install "devdocs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devdocsorg/multica/releases/download/v0.4.219-node24-verify-2/devdocs-cli-0.4.219-node24-verify-2-darwin-arm64.tar.gz"
-      sha256 "310d7f67867c63fc69aa5331a2fa1539251f6ab5cf11cc51aba69c7e88a2a634"
+      url "https://github.com/devdocsorg/multica/releases/download/v0.4.279/devdocs-cli-0.4.279-darwin-arm64.tar.gz"
+      sha256 "e76121a81711c5f5e9183a0bf0fcf403eae9a3c9af2af9cc4cd9e4d0a6235451"
 
       define_method(:install) do
         bin.install "devdocs"
@@ -28,15 +28,15 @@ class Devdocs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devdocsorg/multica/releases/download/v0.4.219-node24-verify-2/devdocs-cli-0.4.219-node24-verify-2-linux-amd64.tar.gz"
-      sha256 "371da1946b853d8c5475cdee66249f464c9fa23560ae65f4cf8afb01293e4650"
+      url "https://github.com/devdocsorg/multica/releases/download/v0.4.279/devdocs-cli-0.4.279-linux-amd64.tar.gz"
+      sha256 "84d514bd247b13d0e5defa3edf4ae13fc6444f5e065e6a0189f1650ad07f86e1"
       define_method(:install) do
         bin.install "devdocs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devdocsorg/multica/releases/download/v0.4.219-node24-verify-2/devdocs-cli-0.4.219-node24-verify-2-linux-arm64.tar.gz"
-      sha256 "1af71faef8c002a0b62ad24a6953f49db06eeafeb1518b8d97695c8f0bad3257"
+      url "https://github.com/devdocsorg/multica/releases/download/v0.4.279/devdocs-cli-0.4.279-linux-arm64.tar.gz"
+      sha256 "6532e5fe279478ffb908ddeac8daac7f00cfafc190d3a6466e0a6d9547359f06"
       define_method(:install) do
         bin.install "devdocs"
       end
